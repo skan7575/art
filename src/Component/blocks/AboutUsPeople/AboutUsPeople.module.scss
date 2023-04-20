@@ -1,0 +1,28 @@
+.people {
+  padding: 94px 0;
+  background-image: url(../../../Images/rewiev/bgi.jpg);
+  width: 100%;
+
+  &__card {
+    align-items: center;
+    display: flex !important;
+    gap: 20px;
+  }
+  &__text {
+    max-width: 600px;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+  &__image {
+    border-radius: 20px;
+    max-width: 480px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+}

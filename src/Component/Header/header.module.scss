@@ -1,0 +1,161 @@
+.header {
+  background: linear-gradient(180deg, #0D0C0C 0%, rgba(13, 12, 12, 0.830292) 72.92%, rgba(13, 12, 12, 0.625) 87.5%, rgba(13, 12, 12, 0) 100%);
+  z-index: 1;
+  color: white;
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  &__a {
+    display: none;
+  }
+  &__span {
+    display: none;
+  }
+  &__close {
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background-image: url(../../Images/menu.svg);
+  }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    font-weight: normal;
+
+    &_container {
+      gap: 50px;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &Item {
+      text-decoration: none;
+
+
+      &_active {
+
+      }
+    }
+  }
+ &__social {
+   padding: 0;
+   display: none;
+ }
+  &__container {
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    max-width: 984px;
+  }
+
+  &__phone {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat-bold, sans-serif;
+  }
+
+  &__list {
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    padding: 0;
+
+    &Item {
+      font-family: Montserrat-bold, sans-serif;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+
+  .header {
+    &__container {
+      padding: 0 20px;
+    }
+    &__a {
+      text-decoration: none;
+      color: white;
+      font-family: Montserrat-bold, sans-serif;
+      display: block;
+    }
+    &__span {
+      display: block;
+    }
+    &__social {
+      display: flex;
+      gap: 25px;
+    }
+    &__list {
+      flex-direction: column;
+    }
+    &__close {
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+
+      &__open {
+        z-index: 110000;
+        background-image: url(../../Images/close.svg);
+      }
+    }
+
+    &__phone {
+      height: 40px;
+      width: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto;
+      background-image: url(../../Images/phone.svg);
+      background-color: #780810;
+      border-radius: 40px;
+    }
+    &__nav {
+      align-items: center;
+      display: none;
+      z-index: 1;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      top: 0;
+      right: 0;
+      text-align: center;
+      padding: 100px 0;
+      transition: .7s;
+      background-repeat: no-repeat;
+
+      &_container {
+        margin-top: 136px;
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &Item {
+        color: white;
+
+        &_active {
+          color: white;
+        }
+      }
+
+      &_open {
+        display: flex;
+      }
+    }
+
+  }
+
+}

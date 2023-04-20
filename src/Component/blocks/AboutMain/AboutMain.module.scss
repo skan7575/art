@@ -1,0 +1,142 @@
+.about-main {
+  position: relative;
+  background-color: #0D0C0C;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 170px;
+
+  &:before {
+    top: 35px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: -10%;
+    position: absolute;
+    content: '';
+    height: 401px;
+    width: 395px;
+    background-image: url(../../../Images/righttregul.svg);
+  }
+
+  &__about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 16px 0;
+    text-align: center;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+
+    &:after {
+      margin-top: 16px;
+      background-color: white;
+      content: '';
+      width: 120px;
+      height: 1px;
+    }
+  }
+
+  &__about-title {
+    font-family: Furore, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    margin: 68px auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+    width: 837px;
+    text-align: center;
+    background-size: cover;
+    background-image: url(../../../Images/abouttitleone.svg);
+    color: #030000;
+    text-transform: uppercase;
+
+    &_two {
+      background-image: url(../../../Images/two.svg);
+    }
+
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 0 0;
+    font-family: 'Furore', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    color: white;
+
+    &::after {
+      margin-bottom: 20px;
+      margin-top: 36px;
+      content: '';
+      width: 120px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 984px;
+  }
+
+  &__text-container {
+    gap: 20px;
+    display: flex;
+  }
+
+  &__text-block {
+    max-width: 484px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .about-main {
+    padding-bottom: 20px;
+    &:before {
+      display: none;
+    }
+    &__text-block {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      max-width: 280px;
+    }
+    &__text-container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &__title {
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__about-title {
+      max-width: 100vw;
+      box-sizing: content-box;
+      padding: 18px;
+      background-position: center;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.flex {
+  display: flex;
+  &__left {
+   flex-direction: column;
+   max-width: 480px;
+ }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 581px;
+    list-style: none;
+    padding: 0;
+  }
+}
+li {
+  color: white;
+}
+.project {
+  padding-top: 40px;
+  background-color: #0D0C0C;
+  width: 100%;
+  height: 100%;
+
+  &__list {
+    margin-bottom: 66px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      content: '';
+      width: 120px;
+      height: 1px;
+      background-color: white;
+    }
+    &::after {
+      content: '';
+      width: 120px;
+      height: 1px;
+      background-color: white;
+    }
+    &Icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &__image {
+    border-radius: 12px;
+  }
+  &__wrapper {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin:  0 auto;
+    width: 100%;
+    max-width: 1177px;
+  }
+  &__title {
+    margin-bottom: 36px;
+    font-family: 'Furore', sans-serif;
+    font-style: normal;
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .flex {
+    &__left {
+      display: flex;
+      flex-direction: column;
+    }
+    &__right {
+      order: -1;
+    }
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    &__list {
+      max-width: 270px;
+      margin: 0 auto;
+      &:after {
+        margin-bottom: 27px;
+      }
+      &Icon {
+        max-width: 270px;
+        flex-direction: column;
+      }
+      order: 3;
+    }
+    &__image {
+      margin-bottom: 60px;
+      max-width: 280px;
+      order: 4;
+    }
+    &__wrapper {
+      order: 2;
+      flex-direction: column;
+    }
+    &__title {
+      &H {
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

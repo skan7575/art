@@ -1,0 +1,62 @@
+.section {
+    padding-top: 77px;
+    width: 100%;
+    background-color: black;
+}
+.container {
+    margin: 0 auto;
+    max-width: 980px;
+}
+.faq__content {
+
+}
+.faq__text {
+    font-size: 14px;
+    line-height: 28px;
+    max-width: 700px;
+    color: white;
+    padding-bottom: 20px;
+}
+.faq__title {
+    font-family: Furore, sans-serif;
+    margin-bottom: 47px;
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: center;
+
+}
+summary {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 1rem;
+    margin-bottom: 12px;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+}
+
+details > summary {
+
+}
+details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+}
+details[open] > summary {
+    background-color: #780810;
+}
+details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}

@@ -1,0 +1,237 @@
+.before {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 1180px;
+
+  &::before {
+    z-index: 1;
+    top: 100px;
+    left: -180px;
+    content: '';
+    width: 307px;
+    height: 233px;
+    background-image: url(../../Images/treq.svg);
+    position: absolute;
+  }
+
+  &::after {
+    z-index: 1;
+    bottom: 100px;
+    right: -180px;
+    content: '';
+    width: 409px;
+    height: 417px;
+    background-image: url(../../Images/lefttreq.svg);
+    position: absolute;
+  }
+}
+
+.container {
+  padding-top: 60px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #0D0C0C;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.BeforeAfterSlider {
+  max-width: 380px;
+}
+
+.wrapper {
+  justify-content: center;
+  max-height: 500px;
+  gap: 40px;
+  width: 100%;
+  background: rgba(126, 126, 126, 0.2);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+  max-width: 1180px;
+  display: flex;
+  padding: 75px 130px;
+  box-sizing: content-box;
+  position: relative;
+  z-index: 3;
+
+}
+
+.optgroup {
+  background: #1C1B1B;
+}
+
+option {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  background: #1C1B1B;
+
+}
+
+input[type='range'] {
+  margin-top: 12px;
+  -webkit-appearance: none; /* Удаление стандартного ползунка для Safari */
+  width: 300px; /* Ширина ползунка */
+  height: 3px; /* Высота ползунка */
+  background: white; /* Красный цвет фона */
+  outline: none; /* Удаление стандартной обводки */
+
+  &::-webkit-slider-thumb { /* Стилизация ползунка для Webkit */
+    -webkit-appearance: none; /* Удаление стандартного ползунка */
+    width: 16px; /* Ширина ползунка */
+    height: 16px; /* Высота ползунка */
+    background: white; /* Белый цвет фона для ползунка */
+    border-radius: 50%; /* Создание круглой формы для ползунка */
+    position: relative;
+  }
+}
+
+.form {
+  max-width: 500px;
+  height: 100%;
+
+  &__button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #780810;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 14px 40px;
+    box-sizing: border-box;
+    width: 157px;
+    height: 48px;
+  }
+
+  &__price {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+  }
+
+  &__text {
+    margin-top: 48px;
+    margin-bottom: 40px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #F2F2F2;
+  }
+
+  &__select {
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid white;
+    background-color: transparent;
+    height: 32px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    width: 142px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    align-items: center;
+    gap: 30px;
+    display: flex;
+
+    &_column {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    font-family: 'Furore', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .container {
+    padding-bottom: 20px;
+  }
+  .slider__wrapper {
+    max-width: 180px;
+  }
+  .BeforeAfterSlider {
+     height: 100%;
+
+  }
+  .before {
+
+    &:after {
+      display: none;
+    }
+  }
+  .wrapper {
+    max-height: 1200px;
+    align-items: center;
+    padding: 21px;
+    flex-direction: column;
+    max-width: 320px;
+
+
+  }
+  .form {
+    &__text {
+      margin: 16px 0;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      max-width: 136px;
+      max-height: 37px;
+
+    }
+    &__price {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+}
