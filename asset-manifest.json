@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.637bcfc8.css",
+    "main.js": "/static/js/main.be9853d3.js",
+    "static/js/787.0cf6dac4.chunk.js": "/static/js/787.0cf6dac4.chunk.js",
+    "static/media/3.jpg": "/static/media/3.b5eb29e0962a1346debe.jpg",
+    "static/media/MainBanner.jpg": "/static/media/MainBanner.626e9541c1e8d12027b3.jpg",
+    "static/media/2.jpg": "/static/media/2.1849da1ca37fd4b7e4b3.jpg",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.2a2d37bf7680d86811db.ttf",
+    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.0915f0a8c3367a6d05ec.ttf",
+    "static/media/FotoAfter.jpg": "/static/media/FotoAfter.1203ff8a7bbacf63ba03.jpg",
+    "static/media/Classic Art.jpg": "/static/media/Classic Art.36d3269c76a314f26bc1.jpg",
+    "static/media/foto.jpg": "/static/media/foto.5a7f5ba3e623f7a5be0e.jpg",
+    "static/media/two.svg": "/static/media/two.4636388f307969cbd08f.svg",
+    "static/media/abouttitleone.svg": "/static/media/abouttitleone.455e644bd8bae5f25b52.svg",
+    "static/media/Furore.otf": "/static/media/Furore.7c2d24435f6f4ca0152e.otf",
+    "static/media/Standart.svg": "/static/media/Standart.d9cc4a0b47d7be4acc73.svg",
+    "static/media/Art memory.svg": "/static/media/Art memory.4fc4ee6576609b1b26ef3b7086e66096.svg",
+    "static/media/left.svg": "/static/media/left.c2847eecffa62a14f1c5.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/whatsap.svg": "/static/media/whatsap.dc99aa24174b7f8b3adbb2c0c9bd3a12.svg",
+    "static/media/dzen.svg": "/static/media/dzen.d00495246f85006803c090c7b4f30e6b.svg",
+    "static/media/youtube.svg": "/static/media/youtube.55bcc998d95d337c43e2d334e7a08457.svg",
+    "static/media/righttregul.svg": "/static/media/righttregul.b1ab3507b27e5ccd8cb5.svg",
+    "static/media/vk.svg": "/static/media/vk.ae2b966118c9772cce21171eeb4008ab.svg",
+    "static/media/telegram.svg": "/static/media/telegram.7fdf88195cb3e5c7b4175bc0badafa7d.svg",
+    "static/media/down.svg": "/static/media/down.e849b132eeabe294b671.svg",
+    "index.html": "/index.html",
+    "static/media/arrowPrew.svg": "/static/media/arrowPrew.1842d5b2dbc240827aa9.svg",
+    "static/media/right.svg": "/static/media/right.174241e5945b6aa20598.svg",
+    "main.637bcfc8.css.map": "/static/css/main.637bcfc8.css.map",
+    "main.be9853d3.js.map": "/static/js/main.be9853d3.js.map",
+    "787.0cf6dac4.chunk.js.map": "/static/js/787.0cf6dac4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.637bcfc8.css",
+    "static/js/main.be9853d3.js"
+  ]
+}
