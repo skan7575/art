@@ -60,3 +60,9 @@ details[open] > summary::after {
 details > summary::-webkit-details-marker {
     display: none;
 }
+
+@media screen and ( max-width: 882px) {
+    .container {
+        padding: 50px;
+    }
+}

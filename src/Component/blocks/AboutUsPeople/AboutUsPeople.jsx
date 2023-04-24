@@ -44,7 +44,28 @@ function AboutUsPeople(props) {
         },
     ];
 
+    function SamplePrevArrow({ className, style, onClick }) {
+
+        return (
+            <div
+                className={` ${styles.prev}`}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function SampleNextArrow({className, style, onClick}) {
+        return (
+            <div
+                className={` ${styles.next}`}
+                onClick={onClick}
+            />
+        );
+    }
+
     const settings = {
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
         dots: true,
         infinite: true,
         speed: 500,

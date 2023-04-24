@@ -4,6 +4,7 @@
   background-color: #1E1E1E;
   display: flex;
   justify-content: center;
+
   &__wrapper {
     padding: 84px 222px;
     background-position: center;
@@ -17,6 +18,7 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,7 @@
     flex-direction: column;
     gap: 30px;
   }
+
   &__button {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
@@ -43,12 +46,14 @@
     border-radius: 5px;
     padding: 14px 40px 14px 40px;
   }
+
   &__container {
     gap: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
   }
+
   &__comment {
     height: 201px;
     width: 374px;
@@ -58,6 +63,7 @@
     box-sizing: border-box;
     border: 2px solid;
   }
+
   &__title {
     margin-bottom: 16px;
     font-family: Furore, sans-serif;
@@ -66,11 +72,13 @@
     line-height: 28px;
     text-align: center;
   }
+
   &__inputs {
     gap: 12px;
     display: flex;
     flex-direction: column;
   }
+
   &__input {
     color: #0D0C0C;
     height: 41px;
@@ -79,5 +87,38 @@
     border-radius: 5px;
     padding: 12px 185px 12px 14px;
 
+  }
+}
+
+@media screen and (max-width: 892px) {
+  .form {
+    &__inputs {
+      min-width: 280px;
+      max-width: 280px;
+    }
+    &__input {
+      max-width: 100%;
+      width: 100%;
+      padding: 12px;
+    }
+    &__comment {
+      width: 280px;
+      padding: 12px;
+
+    }
+    &__title {
+      margin-top: 120px;
+    }
+    &__wrapper {
+      background-size: cover;
+      padding: 0;
+    }
+    &__container {
+      flex-direction: column;
+    }
+    &__buttons {
+      margin-top: 0;
+      padding: 76px 0;
+    }
   }
 }
