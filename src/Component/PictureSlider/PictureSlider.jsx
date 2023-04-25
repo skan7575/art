@@ -2,56 +2,10 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import styles from './PictureSlider.module.scss';
-import img1 from '../../Images/Slider/Classic Art.jpg';
+
 import './slider.css'
 
-function PictureSlider({styleProp}) {
-    const images = [
-        {
-            id: 1,
-            url:` ${img1}`,
-            title: 'Классическое искусство',
-            about: 'Одна из самых универсальных стилизаций',
-            price: '4 200',
-        },
-        {
-            id: 1,
-            url:` ${img1}`,
-            title: 'Классическое искусство',
-            about: 'Одна из самых универсальных стилизаций',
-            price: '4 200',
-        },
-        {
-            id: 1,
-            url:` ${img1}`,
-            title: 'Классическое искусство',
-            about: 'Одна из самых универсальных стилизаций',
-            price: '4 200',
-        },
-        {
-            id: 1,
-            url:` ${img1}`,
-            title: 'Классическое искусство',
-            about: 'Одна из самых универсальных стилизаций',
-            price: '4 200',
-        },
-        {
-            id: 1,
-            url:` ${img1}`,
-            title: 'Классическое искусство',
-            about: 'Одна из самых универсальных стилизаций',
-            price: '4 200',
-        },
-        {
-            id: 1,
-            url:` ${img1}`,
-            title: 'Классическое искусство',
-            about: 'Одна из самых универсальных стилизаций',
-            price: '4 200',
-        },
-
-    ];
-
+function PictureSlider({styleProp, images}) {
 
 
     const handleDragStart = (e) => e.preventDefault();
