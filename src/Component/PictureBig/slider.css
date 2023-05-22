@@ -1,0 +1,7 @@
+.slick-slider-big {
+    display: flex;
+    flex-direction: column;
+}
+.slick-list {
+    order: -1;
+}

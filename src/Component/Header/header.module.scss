@@ -1,6 +1,6 @@
 .header {
   background: linear-gradient(180deg, #0D0C0C 0%, rgba(13, 12, 12, 0.830292) 72.92%, rgba(13, 12, 12, 0.625) 87.5%, rgba(13, 12, 12, 0) 100%);
-  z-index: 1;
+  z-index: 10;
   color: white;
   height: 55px;
   position: fixed;
@@ -12,6 +12,7 @@
     display: none;
   }
   &__close {
+    cursor: pointer;
     width: 44px;
     height: 44px;
     background: transparent;
@@ -70,6 +71,8 @@
     padding: 0;
 
     &Item {
+      text-decoration: none;
+      color: white;
       font-family: Montserrat-bold, sans-serif;
     }
   }

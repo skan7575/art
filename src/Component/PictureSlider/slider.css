@@ -38,9 +38,84 @@
 .alice-carousel-new_left:after {
     left: -40%;
     background-image: url(../../Images/left.svg);
+
+
 }
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 1800px) {
+    .alice-carousel__prev-btn {
+
+    }
+    .alice-carousel__next-btn {
+
+    }
     .alice-carousel {
+
+    }
+    .alice-carousel-new_left:after {
+        display: none;
+    }
+    .alice-carousel-new:after {
+        display: none;
+
+    }
+}
+@media screen and (max-width: 1400px) {
+    .alice-carousel__prev-btn {
+        left: 0;
+    }
+    .alice-carousel__next-btn {
+        right: 0;
+    }
+    .alice-carousel {
+        max-width: 880px !important;
+    }
+    .alice-carousel-new_left:after {
+        display: none;
+    }
+    .alice-carousel-new:after {
+        display: none;
+
+    }
+}
+@media screen and (max-width: 1140px) {
+    .alice-carousel__prev-btn {
+        left: 0;
+    }
+    .alice-carousel__next-btn {
+        right: 0;
+    }
+    .alice-carousel {
+        max-width: 880px !important;
+    }
+    .alice-carousel-new_left:after {
+        display: none;
+    }
+    .alice-carousel-new:after {
+        display: none;
+
+    }
+}
+@media screen and (max-width: 880px) {
+    .alice-carousel__prev-btn {
+        left: 0;
+    }
+    .alice-carousel__next-btn {
+        right: 0;
+    }
+    .alice-carousel {
+        max-width: 738px !important;
+    }
+    .alice-carousel-new_left:after {
+        display: none;
+    }
+    .alice-carousel-new:after {
+        display: none;
+
+    }
+}
+@media screen and (max-width: 738px) {
+    .alice-carousel {
+
         max-width: 320px !important;
     }
     .alice-carousel-new_left:after {

@@ -9,21 +9,24 @@ import img5 from "../../../Images/Slider/Art Classic Pro.jpg";
 import img6 from "../../../Images/Slider/Oil Light.jpg";
 const images = [
     {
+        newStyle: 'classicArt',
         id: 1,
         url:` ${img1}`,
-        title: 'Классическое искусство',
+        title: 'Art Classic',
         about: 'Одна из самых универсальных стилизаций',
         price: '4 200',
     },
     {
-        id: 1,
+        newStyle: 'realisticArt',
+        id: 2,
         url:` ${img2}`,
         title: 'Realistic Art',
         about: 'Легкая прорисовка фото, без каких-либо изменений. ',
         price: '4 200',
     },
     {
-        id: 1,
+        newStyle: 'fotoPrint',
+        id: 3,
         url:` ${img3}`,
         title: 'Foto Print',
         about: 'Печать исходного фото на холсте, без художественной обработки',
@@ -33,21 +36,24 @@ const images = [
 
 const images2 = [
     {
-        id: 1,
+        newStyle: 'oilPro',
+        id: 4,
         url:` ${img4}`,
         title: 'Oil Pro',
         about: 'Картина рисуется полностью с нуля',
         price: '12 000',
     },
     {
-        id: 1,
+        newStyle: 'artClassicPro',
+        id: 5,
         url:` ${img5}`,
         title: 'Art Classic Pro',
         about: 'Авторская прорисовка фото с особым вниманием к деталям',
         price: '5 900',
     },
     {
-        id: 1,
+        newStyle: 'oilLight',
+        id: 6,
         url:` ${img6}`,
         title: 'Oil Light',
         about: 'Легкая прорисовка фото под масленную живопись',

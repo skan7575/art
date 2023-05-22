@@ -17,6 +17,10 @@
   }
 
   &__callback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -107,8 +111,7 @@
   &__title {
     margin: 0 0 40px 0;
     text-align: left;
-    line-height: 34px;
-    max-width: 508px;
+    max-width: 700px;
     font-size: 64px;
     color: #D9D9D9;
 
@@ -153,7 +156,49 @@
 
   }
 }
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 1180px) {
+  .main {
+    &__container {
+      max-width: 880px;
+      padding: 0 200px;
+    }
+    &__title {
+
+    }
+    &__buttons {
+
+    }
+    &__social {
+
+    }
+  }
+
+}
+@media screen and (max-width: 879px) {
+  .main {
+    &__container {
+      padding: 0 40px;
+      justify-content: flex-start;
+      display: flex;
+      width: 100%;
+      max-width: 580px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__buttons {
+        display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__social {
+      display: none;
+    }
+  }
+
+}
+@media screen and (max-width: 738px) {
   .main {
     &__feature {
       display: none;
@@ -187,7 +232,7 @@
     &__container {
       justify-content: center;
       display: flex;
-      max-width: 217px;
+
       width: 100%;
 
     }

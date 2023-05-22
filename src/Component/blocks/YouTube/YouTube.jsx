@@ -15,7 +15,7 @@ function YouTube(props) {
                         найдете видеоролики, демонстрирующие, как создавались различные картины с использованием
                         различных техник
                     </p>
-                    <a className={styles.youtube__link} href='/#' target='_blank'>Смотреть все видео</a>
+                    <a className={styles.youtube__link} href='https://www.youtube.com/channel/UCbChxyGw1P_PGJBhFtcGpQw' target='_blank'>Смотреть все видео</a>
                 </div>
                 <img className={styles.youtubePicture} src={youtubePicture} alt=""/>
             </div>

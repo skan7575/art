@@ -28,7 +28,7 @@
     height: 37px;
     width: 137px;
     border-radius: 5px;
-    padding: 10px 36px 10px 36px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: white;
 
@@ -77,4 +77,19 @@
 .pictureItem:hover .pictureItem__buy {
   transition: ease-out 1s;
   opacity: 1;
+}
+@media screen and (max-width: 1180px) {
+  .pictureItem {
+    margin: 0 auto;
+    width: 279px;
+    height: 478px;
+    &__image {
+      max-width: 217px;
+    }
+    &__buy {
+      color: black;
+      opacity: 1;
+    }
+  }
+
 }

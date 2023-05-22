@@ -12,6 +12,8 @@ function OrderForm() {
     const [promoCode, setPromoCode] = useState("");
     const [comment, setComment] = useState("");
     const [agreed, setAgreed] = useState(true);
+
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const message = `Имя: ${name}\nНомер телефона: ${phone}\nГород доставки: ${city}\nПромокод: ${promoCode}\nКомментарий: ${comment}`;
@@ -112,7 +114,7 @@ function OrderForm() {
                                 onChange={(event) => setAgreed(event.target.checked)}
                                 required
                             />
-                            Я согласен с условиями политики конфидициальности
+                          <p className={styles.form__confirm}>Я согласен с условиями политики конфидициальности</p>
                         </div>
                         <button className={styles.form__button} type="submit">Отправить</button>
                     </div>

@@ -13,17 +13,21 @@ import Calculator from "../Component/Calculator/Calculator";
 import AboutProject from "../Component/blocks/AboutProject/AboutProject";
 import YouTube from "../Component/blocks/YouTube/YouTube";
 import Faq from "../Component/blocks/Faq/Faq";
-import Rewiev from "../Component/blocks/Rewiev/OrderForm";
 import OrderForm from "../Component/blocks/Rewiev/OrderForm";
 import image1Mobile from "../Images/Main/1.jpg"
-import AboutUsPeople from "../Component/blocks/AboutUsPeople/AboutUsPeople";
+import HelmetComponent from "../Component/Helmet/HelmetReact";
+import {Link} from "react-router-dom";
+import Adventure from "../Component/Adventure/Adventure";
+import SizePicture from "../Component/SizePicture/SizePicture";
+
+const linkWhatsApp = 'https://wa.me/79145647254?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D1%8F%20%D1%81%20%D0%92%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0,%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C...'
 
 function Main(props) {
     const mobileImages = [image1Mobile, image2, image3]
     const [activeIndex, setActiveIndex] = useState(1);
     const prevIndexRef = useRef(activeIndex);
     const isFirstRender = useRef(true);
-    const isMobile = window.innerWidth < 882;
+    const isMobile = window.innerWidth < 557;
     const images = isMobile ? mobileImages : [image1, image2, image3];
 
 
@@ -31,7 +35,9 @@ function Main(props) {
         prevIndexRef.current = activeIndex;
     }, [activeIndex]);
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const transitionDuration = isFirstRender.current ? '0s' : '0.5s';
     isFirstRender.current = false;
@@ -46,6 +52,10 @@ function Main(props) {
 
     return (
         <>
+            <HelmetComponent
+                title='Art Memory - Картины по фото на холсте на заказ студия'
+                description='Закажите картину: портрет, фотоколлаж, модульную, репродукцию, фото на холсте или на фотобумаге с оформлением в паспарту и рамку   Печать оригинальными чернилами на холсте из натурального хлопка. Прорисовка маслом'
+            />
             <main className={styles.main}
                   style={{
                       backgroundSize: 'cover',
@@ -59,8 +69,10 @@ function Main(props) {
                         <h1 className={styles.main__title}>“ART MEMORY” <br/> <span className={styles.main__titleSpan}>Авторские картины на холсте на заказ</span>
                         </h1>
                         <div className={styles.main__buttons}>
-                            <button className={styles.main__callback}>Связаться</button>
-                            <button className={`${styles.main__callback} ${styles.main__about}`}>Познакомимся?</button>
+                            <a rel="noreferrer" target='_blank' href={linkWhatsApp}
+                               className={styles.main__callback}>Связаться</a>
+                            <Link to='/about-us'
+                                  className={`${styles.main__callback} ${styles.main__about}`}>Познакомимся?</Link>
                         </div>
                     </div>
                 </div>
@@ -69,21 +81,27 @@ function Main(props) {
                     <button onClick={handlePrev} className={`${styles.main__arrow} ${styles.main__arrowDown}`}></button>
                 </div>
                 <ul className={styles.main__social}>
-                    <a target={"_blank"} href="#"><img src={telegram} alt=""/></a>
-                    <a target={"_blank"} href="#"><img src={whatsap} alt=""/></a>
-                    <a target={"_blank"} href="#"><img src={dzen} alt=""/></a>
-                    <a target={"_blank"} href="#"><img src={youtube} alt=""/></a>
-                    <a target={"_blank"} href="#"><img src={vk} alt=""/></a>
+                    <a target={"_blank"} href="https://t.me/artmemory_shop" rel="noreferrer"><img src={telegram}
+                                                                                                  alt=""/></a>
+                    <a target={"_blank"} href={linkWhatsApp}rel="noreferrer"><img src={whatsap}
+                                                                                                  alt=""/></a>
+                    <a target={"_blank"} rel="noreferrer" href="https://zen.yandex.ru/id/623a07d34f338879642bd604"><img
+                        src={dzen} alt=""/></a>
+                    <a target={"_blank"} rel="noreferrer"
+                       href="https://www.youtube.com/channel/UCbChxyGw1P_PGJBhFtcGpQw"><img src={youtube} alt=""/></a>
+                    <a target={"_blank"} rel="noreferrer" href="https://vk.com/artmemory_shop"><img src={vk}
+                                                                                                    alt=""/></a>
                 </ul>
                 <p className={styles.main__feature}>"Эмоции, пожалуй, самый лучший подарок"</p>
             </main>
-            <AboutMain/>
             <Calculator/>
-            <AboutProject />
-            <YouTube />
-            <Faq />
-            <AboutUsPeople />
-            <OrderForm />
+            <AboutMain/>
+            <AboutProject/>
+            <YouTube/>
+            <Faq/>
+            <Adventure/>
+            <SizePicture/>
+            <OrderForm/>
         </>
 
     );

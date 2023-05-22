@@ -1,0 +1,14 @@
+.span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  &:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(tuiIconCheckCircleLarge.svg);
+  }
+}

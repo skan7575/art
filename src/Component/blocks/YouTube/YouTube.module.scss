@@ -6,6 +6,7 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+
   &__link {
     display: block;
     border: 1px solid white;
@@ -18,6 +19,7 @@
     color: white;
     margin-top: 40px;
   }
+
   &__text {
     font-size: 16px;
     font-weight: 400;
@@ -26,15 +28,17 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  &:before {
-    margin-bottom: 20px;
-    display: block;
-    content: '';
-    width: 120px;
-    height: 2px;
-    background-color: #fff;
+
+    &:before {
+      margin-bottom: 20px;
+      display: block;
+      content: '';
+      width: 120px;
+      height: 2px;
+      background-color: #fff;
+    }
   }
-  }
+
   &__title {
     margin-bottom: 50px;
     color: white;
@@ -44,9 +48,11 @@
     font-size: 24px;
     line-height: 28px;
   }
+
   &__container {
 
   }
+
   &__wrapper {
     padding: 137px 0;
     box-sizing: border-box;
@@ -55,11 +61,53 @@
     gap: 150px;
   }
 }
+
 .youtubePicture {
   border-radius: 10px;
 }
+@media screen and (max-width: 1180px) {
+  .youtube {
+    &__wrapper {
+      padding: 80px 20px;
+      gap: 10px;
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .youtubePicture {
+    max-width: 380px;
+  }
+  .youtube {
 
-@media screen and (max-width: 882px) {
+    &__container {
+      max-width: 478px;
+    }
+    &__title {
+      text-align: center;
+    }
+
+    &__wrapper {
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 40px 50px;
+      flex-direction: column;
+    }
+
+    &__link {
+      margin: 0 auto;
+      margin-top: 24px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 738px) {
   .youtubePicture {
     max-width: 280px;
   }
@@ -69,17 +117,20 @@
       text-align: center;
       line-height: 23px;
     }
-   &__wrapper {
-     align-items: center;
-     justify-content: center;
-     gap: 24px;
-     padding: 40px 50px;
-     flex-direction: column;
-   }
+
+    &__wrapper {
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 40px 50px;
+      flex-direction: column;
+    }
+
     &__link {
-      margin:  0 auto;
+      margin: 0 auto;
       margin-top: 24px;
     }
+
     &__text {
       font-size: 16px;
       font-weight: 400;

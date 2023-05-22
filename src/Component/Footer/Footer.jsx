@@ -10,6 +10,7 @@ import cdek from "../../Images/Footer/cdek.svg"
 import ems from "../../Images/Footer/ems.svg"
 
 function Footer(props) {
+    const linkWhatsApp = 'https://wa.me/79145647254?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D1%8F%20%D1%81%20%D0%92%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0,%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C...'
     return (
         <footer className={styles.footer}>
             <div className={styles.footer__wrapper}>
@@ -17,19 +18,21 @@ function Footer(props) {
                     <img src={logo} alt="Art memory заказать портерт с доставкой по России"/>
                     <ul className={styles.footer__social}>
                         <li className={styles.footer__socialItem}>
-                            <a href=""><img src={telegram} alt="Telegram"/></a>
+                            <a target={"_blank"} href="https://t.me/artmemory_shop"><img src={telegram} alt=""/></a>
                         </li>
                         <li className={styles.footer__socialItem}>
-                            <a href=""><img src={whatsap} alt="Telegram"/></a>
+                            <a target={"_blank"} href={linkWhatsApp}><img src={whatsap} alt=""/></a>
                         </li>
                         <li className={styles.footer__socialItem}>
-                            <a href=""><img src={dzen} alt="Telegram"/></a>
+                            <a target={"_blank"} href="https://zen.yandex.ru/id/623a07d34f338879642bd604"><img
+                                src={dzen} alt=""/></a>
                         </li>
                         <li className={styles.footer__socialItem}>
-                            <a href=""><img src={youtube} alt="Telegram"/></a>
+                            <a target={"_blank"} href="https://www.youtube.com/channel/UCbChxyGw1P_PGJBhFtcGpQw"><img
+                                src={youtube} alt=""/></a>
                         </li>
                         <li className={styles.footer__socialItem}>
-                            <a href=""><img src={vk} alt="Telegram"/></a>
+                            <a target={"_blank"} href="https://vk.com/artmemory_shop"><img src={vk} alt=""/></a>
                         </li>
                     </ul>
                 </div>

@@ -14,9 +14,6 @@ const prices = {
     },
     fotoPrint: {
         label: "Foto Print",
-        text: {
-
-        },
         sizes: {
             "40/50": { label: "40x50", cost: 2300 },
             "40/60": { label: "40x60", cost: 2500 },
@@ -47,6 +44,7 @@ const prices = {
             "50/60": { label: "50x60", cost: 5900 },
             "50/70": { label: "50x70", cost: 6200 },
             "60/80": { label: "60x80", cost: 6700 },
+            "70/90": { label: "70x90", cost: 7500 },
             "80/100": { label: "80x100", cost: 8400 },
             "80/120": { label: "80x120", cost: 9200 },
         },
@@ -55,6 +53,7 @@ const prices = {
         label: "Oil Light",
         sizes: {
             "60/80": { label: "60x80", cost: 10000 },
+            "70/100": { label: "70x100", cost: 15000 },
             "80/120": { label: "80x120", cost: 17000 },
         },
     },

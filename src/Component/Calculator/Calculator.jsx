@@ -16,6 +16,8 @@ import OilLightFirst from '../../Images/Calculate/Oil Light 1.jpg'
 import OilLightSecond from '../../Images/Calculate/Oil Light 2.jpg'
 import BeforeAfterSlider from "react-before-after-slider-component";
 import 'react-before-after-slider-component/dist/build.css';
+import Popup from "../PopupWithForm/Popup";
+import PictureForm from "../PictureForm/PictureForm";
 
 function Calculator() {
     const [style, setStyle] = useState("classicArt");
@@ -25,7 +27,20 @@ function Calculator() {
     const [text, setText] = useState('')
     const [firstImage, setFirstImage] = useState({imageUrl: `${foto1}`})
     const [secondImage, setSecondImage] = useState({imageUrl: `${foto2}`})
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
 
+    useEffect(() => {
+        const handleEsc = (event) => {
+            if (event.keyCode === 27) {
+                setIsPopupOpen(false);
+            }
+        };
+        window.addEventListener('keydown', handleEsc);
+
+        return () => {
+            window.removeEventListener('keydown', handleEsc);
+        };
+    }, []);
 
     useEffect(() => {
         switch (style) {
@@ -62,8 +77,8 @@ function Calculator() {
 
         }
         let newCost = prices[style].sizes[size].cost;
-        if (style === 'fotoPrint') {
-
+        if (style === 'oilPro' || style === 'oilLight') {
+            newCost += quantity > 1 ? (quantity - 1) * 2000 : 0;
         } else {
             newCost += quantity > 1 ? (quantity - 1) * 1000 : 0;
         }
@@ -95,6 +110,14 @@ function Calculator() {
         setQuantity(event.target.value);
     };
 
+    const handleSubmitForm = (e) => {
+        e.preventDefault()
+        setIsPopupOpen(true)
+    }
+    const closePopup = () => {
+        setIsPopupOpen(false); // Закрывает попап
+    };
+
     return (
         <section className={styles.container}>
             <div className={styles.before}>
@@ -106,7 +129,7 @@ function Calculator() {
                     </div>
 
 
-                    <form className={styles.form}>
+                    <form  onSubmit={handleSubmitForm} className={styles.form}>
                         <h2 className={styles.form__title}>Заказать портрет</h2>
                         <div className={styles.form__wrapper}>
                             <div className={styles.form__container}>
@@ -156,13 +179,16 @@ function Calculator() {
                         </div>
                         <p className={styles.form__text}>{text}</p>
                         <div className={styles.form__wrapper}>
-                            <p className={styles.form__price}>Итого: {cost} руб.</p>
+                            <p className={styles.form__price}>Итого: {style === 'artClassicPro' || style === 'oilLight' || style === 'oilPro' ?
+                                <span>от</span> : ''} {cost} руб.</p>
                             <button className={styles.form__button}>Заказать</button>
                         </div>
                     </form>
                 </div>
             </div>
-
+            {isPopupOpen && ( // Отображает попап при isPopupOpen === true
+                <Popup close={closePopup} children={<PictureForm style={style} />}>{/* Ваши дочерние компоненты попапа */}</Popup>
+            )}
         </section>
     );
 }

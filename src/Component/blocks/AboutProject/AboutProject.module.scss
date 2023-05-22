@@ -71,8 +71,50 @@ li {
     text-align: center;
   }
 }
+@media screen and (max-width: 1180px) {
+  .flex {
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 580px;
+    }
+    &__right {
+      order: -1;
+    }
+  }
+  .project {
 
-@media screen and (max-width: 882px) {
+    &__list {
+      margin-top: 80px;
+      &:after {
+        margin-bottom: 27px;
+      }
+      &Icon {
+        max-width: 800px;
+        flex-direction: row;
+      }
+      order: 3;
+    }
+    &__image {
+      margin-bottom: 60px;
+      max-width: 680px;
+      order: 4;
+    }
+    &__wrapper {
+      order: 2;
+      flex-direction: column;
+    }
+    &__title {
+      margin-bottom: 90px;
+      &H {
+
+      }
+
+    }
+  }
+}
+@media screen and (max-width: 738px) {
   .flex {
     &__left {
       display: flex;
