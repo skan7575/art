@@ -20,8 +20,8 @@ import Popup from "../PopupWithForm/Popup";
 import PictureForm from "../PictureForm/PictureForm";
 
 function Calculator() {
-    const [style, setStyle] = useState("classicArt");
-    const [size, setSize] = useState("40/50");
+    const [style, setStyle] = useState("artClassicPro");
+    const [size, setSize] = useState("50/60");
     const [quantity, setQuantity] = useState(1);
     const [cost, setCost] = useState(0);
     const [text, setText] = useState('')
@@ -77,9 +77,14 @@ function Calculator() {
 
         }
         let newCost = prices[style].sizes[size].cost;
+
         if (style === 'oilPro' || style === 'oilLight') {
             newCost += quantity > 1 ? (quantity - 1) * 2000 : 0;
-        } else {
+        }
+        else if (style === 'fotoPrint') {
+            newCost += 0
+        }
+        else  {
             newCost += quantity > 1 ? (quantity - 1) * 1000 : 0;
         }
         setCost(newCost);
