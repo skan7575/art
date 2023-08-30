@@ -5,7 +5,7 @@ import steps2 from '../../Images/About/steps2.png'
 import steps3 from '../../Images/About/steps3.png'
 import steps4 from '../../Images/About/steps4.png'
 import steps5 from '../../Images/About/steps5.png'
-import OrderForm from "../blocks/Rewiev/OrderForm";
+
 
 
 function Steps(props) {

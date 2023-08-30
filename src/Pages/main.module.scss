@@ -7,8 +7,7 @@
   min-height: 100vh;
 
   &__feature {
-    position: absolute;
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     color: white;
     bottom: 30%;
@@ -27,6 +26,7 @@
     cursor: pointer;
     height: 48px;
     width: 168px;
+    text-align: center;
     box-sizing: border-box;
     border-radius: 5px;
     border: none;
@@ -118,7 +118,7 @@
     &Span {
       font-family: Montserrat, sans-serif;
       font-size: 24px;
-      line-height: 29px;
+
     }
   }
 
@@ -184,8 +184,12 @@
       max-width: 580px;
     }
     &__title {
+      max-width: 250px;
       font-size: 32px;
       line-height: 36px;
+      &Span {
+        line-height: 16px;
+      }
     }
     &__buttons {
         display: flex;
@@ -207,19 +211,20 @@
       display: none;
     }
     &__title {
-      font-size: 36px;
+      font-size: 30px;
       line-height: 41px;
     }
 
     &__titleSpan {
-      font-size: 16px;
+      font-size: 14px;
     }
     &__buttons {
 
     }
     &__callback {
+      padding: 3px 7px;
       height: 37px;
-      width: 136px;
+      box-sizing: content-box;
       font-size: 14px;
       line-height: 17px;
     }
@@ -230,9 +235,7 @@
       margin-top: 121px;
     }
     &__container {
-      justify-content: center;
       display: flex;
-
       width: 100%;
 
     }

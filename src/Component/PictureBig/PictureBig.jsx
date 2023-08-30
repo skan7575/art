@@ -13,153 +13,153 @@ import OnlyForm from "../Calculator/OnlyForm/OnlyForm";
 
 const realisticArt = [
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2010.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2010.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2011.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2011.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2012.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2012.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2013.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2013.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2014.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2014.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2015.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2015.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%2016.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%2016.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/Realistic%204%201.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/Realistic%204%201.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/realisticArt/real%202.jpg`,
+        url: `https://artmemory-rus.ru/Files/realisticArt/real%202.jpg`,
     },
 ]
 const fotoPrint = [
     {
-        url: `http://artmemory-rus.ru/Files/fotoPrint/foto.jpg`,
+        url: `https://artmemory-rus.ru/Files/fotoPrint/foto.jpg`,
     },
 
 ]
 const classicArt = [
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-1.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-1.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-2.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-2.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-3.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-3.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-4.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-4.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-5.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-5.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-6.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-6.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art-7.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art-7.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/classicArt/Classic%20Art11.jpg`,
+        url: `https://artmemory-rus.ru/Files/classicArt/Classic%20Art11.jpg`,
     },
 ]
 const artClassicPro = [
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-1.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-1.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-2.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-2.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-3.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-3.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-4.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro-4.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Art%20Classic%20Pro.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro-1.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro-1.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro-2.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro-2.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro-3.jpg`,
+        url: `https://artmemory-rus.ru/Files/artClassicPro/Oil%20Pro-3.jpg`,
     },
 ]
 const oilLight = [
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-1.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-1.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-2.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-2.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-3.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-3.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-4.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-4.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-5.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-5.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-6.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-6.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-7.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-7.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light-8.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light-8.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilLight/Oil%20Light.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilLight/Oil%20Light.jpg`,
     },
 ]
 const oilPro = [
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-1.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-1.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-2.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-2.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-3.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-3.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-4.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-4.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-5.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-5.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-6.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-6.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-7.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-7.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro-8.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro-8.jpg`,
     },
     {
-        url: `http://artmemory-rus.ru/Files/oilPro/Oil%20Pro.jpg`,
+        url: `https://artmemory-rus.ru/Files/oilPro/Oil%20Pro.jpg`,
     },
 ]
 

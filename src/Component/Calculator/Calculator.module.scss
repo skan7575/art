@@ -7,6 +7,7 @@
   max-width: 1180px;
 
   &::before {
+
     z-index: 1;
     top: 100px;
     left: -180px;
@@ -17,16 +18,7 @@
     position: absolute;
   }
 
-  &::after {
-    z-index: 1;
-    bottom: 100px;
-    right: -180px;
-    content: '';
-    width: 409px;
-    height: 417px;
-    background-image: url(../../Images/lefttreq.svg);
-    position: absolute;
-  }
+
 }
 
 .container {
@@ -95,6 +87,19 @@ input[type='range'] {
 }
 
 .form {
+  position: relative;
+  z-index: 1;
+  &::after {
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 409px;
+    height: 417px;
+    background-image: url(../../Images/lefttreq.svg);
+
+  }
   max-width: 500px;
   height: 100%;
 

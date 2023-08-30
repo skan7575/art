@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from './OrderForm.module.scss'
+import InputMask from "react-input-mask";
 
 
 function OrderForm() {
@@ -19,6 +20,16 @@ function OrderForm() {
         const message = `Имя: ${name}\nНомер телефона: ${phone}\nГород доставки: ${city}\nПромокод: ${promoCode}\nКомментарий: ${comment}`;
 
         fetch(`https://api.telegram.org/bot6155118070:AAG43KK4BJK7D-HpzXBVpzbhPhA756H9npY/sendMessage?chat_id=647119601&text=${encodeURIComponent(message)}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Ошибка отправки сообщения");
+                }
+                alert("Сообщение успешно отправлено!");
+            })
+            .catch(error => {
+                alert(`Ошибка отправки сообщения: ${error.message}`);
+            });
+        fetch(`https://api.telegram.org/bot6155118070:AAG43KK4BJK7D-HpzXBVpzbhPhA756H9npY/sendMessage?chat_id=224287534&text=${encodeURIComponent(message)}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Ошибка отправки сообщения");
@@ -65,17 +76,26 @@ function OrderForm() {
                                 onChange={(event) => setName(event.target.value)}
                                 required
                             />
-                            <input
-                                className={styles.form__input}
-                                placeholder='Номер телефона:'
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                value={phone}
-                                onChange={handlePhoneChange}
-                                pattern="\+7[0-9]{10}"
-                                required
-                            />
+
+                                <InputMask
+                                    className={styles.form__input}
+                                    mask="+7 (999)-999-99-99"
+                                    value={phone}
+                                    onChange={handlePhoneChange}
+                                    required
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                >
+                                    {() => (
+                                        <input
+                                            className={styles.form__input}
+                                            type="text"
+                                            placeholder="+7 (___)-___-__-__"
+                                            // Дополнительные атрибуты инпута, если необходимо
+                                        />
+                                    )}
+                                </InputMask>
                             <input
                                 placeholder='Город доставки:'
                                 className={styles.form__input}

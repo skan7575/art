@@ -5,7 +5,7 @@ function PictureStyle(props) {
     return (
         <section className={styles.picture}>
             <div className={styles.picture__container}>
-                <h2 className={styles.picture__title}>Отличие стилизаций Картин на хослте</h2>
+                <h2 className={styles.picture__title}>Отличие стилизаций</h2>
                 <p className={styles.picture__text}>Существует множество различных стилей прорисовки фотографий, каждый из которых имеет свои уникальные
                     характеристики и приемы.</p>
                 <div className={styles.picture__container_text}>
@@ -18,11 +18,11 @@ function PictureStyle(props) {
                         повтор фото под данную стилизацию.</p>
                 </div>
                 <div className={styles.picture__image_container}>
-                    <img className={`${styles.picture__image} ${styles.picture__image_1}`} src='http://artmemory-rus.ru/Files/Styles/image%20215.jpg' alt=""/>
-                    <img className={`${styles.picture__image} ${styles.picture__image_2}`} src='http://artmemory-rus.ru/Files/Styles/image%20216.jpg' alt=""/>
-                    <img className={`${styles.picture__image} ${styles.picture__image_3}`} src='http://artmemory-rus.ru/Files/Styles/image%20219.jpg' alt=""/>
-                    <img className={`${styles.picture__image} ${styles.picture__image_4}`} src='http://artmemory-rus.ru/Files/Styles/image%20218.jpg' alt=""/>
-                    <img className={`${styles.picture__image} ${styles.picture__image_5}`} src='http://artmemory-rus.ru/Files/Styles/image%20217.jpg' alt=""/>
+                    <img className={`${styles.picture__image} ${styles.picture__image_1}`} src='https://artmemory-rus.ru/Files/Styles/image%20215.jpg' alt=""/>
+                    <img className={`${styles.picture__image} ${styles.picture__image_2}`} src='https://artmemory-rus.ru/Files/Styles/image%20216.jpg' alt=""/>
+                    <img className={`${styles.picture__image} ${styles.picture__image_3}`} src='https://artmemory-rus.ru/Files/Styles/image%20219.jpg' alt=""/>
+                    <img className={`${styles.picture__image} ${styles.picture__image_4}`} src='https://artmemory-rus.ru/Files/Styles/image%20218.jpg' alt=""/>
+                    <img className={`${styles.picture__image} ${styles.picture__image_5}`} src='https://artmemory-rus.ru/Files/Styles/image%20217.jpg' alt=""/>
                 </div>
             </div>
         </section>

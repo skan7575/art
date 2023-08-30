@@ -9,6 +9,7 @@ import img3 from '../../../Images/rewiev/322.jpg'
 import img4 from '../../../Images/rewiev/323.jpg'
 import img5 from '../../../Images/rewiev/Frame 1077235789.jpg'
 import img6 from '../../../Images/rewiev/324.jpg'
+import stylesAdv from "../../Adventure/Adventure.module.scss";
 function AboutUsPeople(props) {
     const images = [
         {
@@ -75,6 +76,7 @@ function AboutUsPeople(props) {
 
     return (
         <section className={styles.people}>
+            <h2 className={styles.people__title}>Кусочек отзывов наших клиентов:</h2>
             <div className={styles.container}>
                 <Slider {...settings}>
                     {images.map((image) => (

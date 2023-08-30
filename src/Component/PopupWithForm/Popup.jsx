@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React  from "react";
 import styles from './Popup.module.scss'
 
 const Popup = ({children, close}) => {

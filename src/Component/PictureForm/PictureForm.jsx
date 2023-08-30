@@ -23,6 +23,16 @@ function PictureForm({style}) {
             .catch(error => {
                 alert(`Ошибка отправки сообщения: ${error.message}`);
             });
+        fetch(`https://api.telegram.org/bot6155118070:AAG43KK4BJK7D-HpzXBVpzbhPhA756H9npY/sendMessage?chat_id=224287534&text=${encodeURIComponent(message)}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Ошибка отправки сообщения");
+                }
+                alert("Сообщение успешно отправлено!");
+            })
+            .catch(error => {
+                alert(`Ошибка отправки сообщения: ${error.message}`);
+            });
         event.target.reset();
         setPromoCode('')
         setCity('')

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Faq.module.scss"
 
-function Faq(props) {
+function Faq() {
 
 
     return (

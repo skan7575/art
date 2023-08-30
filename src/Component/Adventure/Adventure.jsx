@@ -13,7 +13,7 @@ function Adventure(props) {
 
     const adventureContent = [
         {
-            url: 'http://artmemory-rus.ru/Files/Adventure/Frame%201077235768.jpg',
+            url: 'https://artmemory-rus.ru/Files/Adventure/Frame%201077235768.jpg',
             id: 1,
             title: 'Дополнительные услуги к картинам',
             description: 'Каждая услугу уникальна и подходит не для всех стилизаций. Рекомендуем проконсультироваться со специалистом!',
@@ -23,7 +23,7 @@ function Adventure(props) {
             altImage: 'Широкий подрамник для картины заказать'
         },
         {
-            url: 'http://artmemory-rus.ru/Files/Adventure/Frame%201077235769.jpg',
+            url: 'https://artmemory-rus.ru/Files/Adventure/Frame%201077235769.jpg',
             id: 2,
             title: 'Дополнительные услуги к картинам',
             description: 'Каждая услугу уникальна и подходит не для всех стилизаций. Рекомендуем проконсультироваться со специалистом!',
@@ -85,6 +85,7 @@ function Adventure(props) {
     return (
         <>
             <section className={styles.people}>
+
                 <div className={styles.container}>
                     <h2 className={stylesAdv.title}>Дополнительные услуги к картинам</h2>
                     <Slider {...settings}>

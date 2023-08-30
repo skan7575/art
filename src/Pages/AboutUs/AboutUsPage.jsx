@@ -3,9 +3,7 @@ import React, {useEffect} from 'react';
 import Steps from "../../Component/Steps/Steps";
 import OrderForm from "../../Component/blocks/Rewiev/OrderForm";
 import StepsVideo from "../../Component/StepsVideo/StepsVideo";
-
 import Banner from "../../Component/Banner/Banner";
-
 import aboutBannerImage from "../../Images/About/Mask group.png";
 import HelmetComponent from "../../Component/Helmet/HelmetReact";
 

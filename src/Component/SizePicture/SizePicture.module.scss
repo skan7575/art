@@ -6,6 +6,9 @@
   padding: 100px 50px;
   box-sizing: border-box;
   gap: 20px;
+  &__container {
+    max-width: 580px;
+  }
  &__text {
    margin-bottom: 20px;
    max-width: 672px;
@@ -32,7 +35,7 @@
       line-height: 28px;
     }
     &__image {
-      max-height: 322px;
+     max-width: 320px;
     }
     &__text {
       max-width: 477px;

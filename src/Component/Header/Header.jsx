@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import logo from '../../Images/Art memory.svg'
 import styles from './header.module.scss'
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import telegram from "../../Images/telegram.svg";
 import whatsap from "../../Images/whatsap.svg";
 import dzen from "../../Images/dzen.svg";
@@ -13,7 +13,7 @@ function Header(props) {
     const linkWhatsApp = 'https://wa.me/79145647254?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5,%20%D1%8F%20%D1%81%20%D0%92%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0,%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C...'
     const [open, setOpen] = useState(false)
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+    const location = useLocation()
     useEffect(() => {
         function handleResize() {
             setWindowWidth(window.innerWidth);
@@ -46,7 +46,7 @@ function Header(props) {
                     ?
                     <button onClick={() => {
                         setOpen(!open)
-                    } }
+                    }}
                             className={open ? `${styles.header__close} ${styles.header__close__open}` : styles.header__close}></button>
                     : ''}
 
@@ -57,10 +57,11 @@ function Header(props) {
                     <ul className={styles.header__list}>
                         <li><Link onClick={() => setOpen(false)} className={styles.header__listItem}
                                   to='/'> Главная </Link></li>
-                        <li><Link onClick={() => setOpen(false)} className={styles.header__listItem} to='about-us'> О
-                            нас </Link></li>
-                        {/*<li><Link onClick={() => setOpen(false)} className={styles.header__listItem}*/}
-                        {/*          to='about-us'>Портреты</Link></li>*/}
+                        <li><Link onClick={() => setOpen(false)} className={styles.header__listItem} to='about-us'> Наша
+                            история </Link></li>
+                        <li><Link onClick={() => setOpen(false)} className={styles.header__listItem} to='partner'> Сотрудничество </Link></li>
+                        <li><a rel="noreferrer" target='_blank' href={linkWhatsApp}
+                               className={styles.header__listItem}>Связаться</a></li>
                     </ul>
                     <ul className={styles.header__social}>
                         <a target={"_blank"} href="https://t.me/artmemory_shop"><img src={telegram} alt=""/></a>

@@ -1,6 +1,7 @@
 .steps {
 
   &__container {
+    padding: 0 50px;
     gap: 150px;
     display: flex;
     justify-content: center;
@@ -9,6 +10,9 @@
     &_left  {
       flex-direction: row-reverse;
     }
+  }
+  &__img {
+    max-width: 50%;
   }
   &__centerText {
     padding: 0 50px;

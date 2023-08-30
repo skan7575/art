@@ -1,19 +1,20 @@
 import React from 'react';
 import styles from './SizePicture.module.scss'
-import img from '../../Images/Size/size.jpg'
 
-function SizePicture(props) {
+
+function SizePicture({picture, text, text2, text3, title}) {
     return (
         <section className={styles.size}>
-            <img className={styles.size__image} src={img} alt="Размеры Картин на холсте"/>
+            <img className={styles.size__image} src={picture} alt="Размеры Картин на холсте"/>
             <div className={styles.size__container}>
-                <h2 className={styles.size__title}>Размеры Картин на холсте</h2>
-                <p className={styles.size__text}>Размер картины в интерьере во многом зависит от размеров и планировки
-                    помещения. Картина размером 60x60 см. может хорошо смотреться в небольшой комнате, а картина
-                    размером 80x80 см. может лучше подойти для большего пространства.
+                <h2 className={styles.size__title}>{title}</h2>
+                <p className={styles.size__text}>{text}
                 </p>
                 <p className={styles.size__text}>
-                    Следует учитывать расположение и пропорции картины, чтобы она дополняла общую эстетику комнаты.
+                    {text2}
+                </p>
+                <p className={styles.size__text}>
+                    {text3}
                 </p>
             </div>
         </section>

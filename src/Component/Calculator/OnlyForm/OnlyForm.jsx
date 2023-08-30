@@ -60,9 +60,15 @@ function OnlyForm({style, onChangeStyle}) {
 
         if (style === 'oilPro' || style === 'oilLight') {
             newCost += quantity > 1 ? (quantity - 1) * 2000 : 0;
-        } else {
+        }
+        else if (style === 'fotoPrint') {
+            newCost += 0
+        }
+        else {
             newCost += quantity > 1 ? (quantity - 1) * 1000 : 0;
         }
+
+
         setCost(newCost);
     }, [style, size, quantity]);
 

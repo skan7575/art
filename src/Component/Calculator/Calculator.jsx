@@ -124,7 +124,7 @@ function Calculator() {
     };
 
     return (
-        <section className={styles.container}>
+        <section id="calculator" className={styles.container}>
             <div className={styles.before}>
                 <div className={styles.wrapper}>
                     <div className={styles.slider__wrapper}>

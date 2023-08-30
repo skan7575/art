@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
-import bg from '../../Images/404/404Img.png'
+import bg from '../../Images/404/notfound.png'
 import styles from './404.module.scss'
 function NotFound(props) {
     useEffect(() => {
